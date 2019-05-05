@@ -35,3 +35,7 @@ body {
         display: none;
     }
 }
+
+p#option1 {
+    border: 1px solid #ccc
+}
