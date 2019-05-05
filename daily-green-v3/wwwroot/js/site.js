@@ -42,8 +42,24 @@ $(document).ready(function () {
 
 function init() {
     score = 0;
+    $("#score").html(score);
+
+    $("#option1").show();
+    $("#option2").show();
+
     setQuestion(1);
     $("#playAgain").hide();
+}
+
+function setQuestion(questId) {
+
+    var questData = getQuestById(questId);
+
+    $("#question").html(questData.title);
+    $("#option1").data("points", questData.points1).data("nextquest", parseInt(questData.nextquest));
+    $("#option2").data("points", questData.points2).data("nextquest", parseInt(questData.nextquest));
+    $("#option1").attr("src", questData.option1);
+    $("#option2").attr("src", questData.option2);
 }
 
 function processOption(obj) {
@@ -62,19 +78,8 @@ function processOption(obj) {
     }
 };
 
-function setQuestion(questId) {
-
-    var questData = getQuestById(questId);
-
-    $("#question").html(questData.title);
-    $("#option1").data("points", questData.points1).data("nextquest", parseInt(questData.nextquest));
-    $("#option2").data("points", questData.points2).data("nextquest", parseInt(questData.nextquest));
-    $("#option1").attr("src", questData.option1);
-    $("#option2").attr("src", questData.option2);
-}
-
 function endGame() {
-    $("#option1").unbind("click");
-    $("#option2").unbind("click");
+    $("#option1").hide();
+    $("#option2").hide();
     $("#playAgain").show();
 }
