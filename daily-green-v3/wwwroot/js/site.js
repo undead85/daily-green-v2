@@ -8,14 +8,14 @@ var score = 0;
 var data = [
     {
         "id": "1", "title": "After a refreshing sleep, you wake up and feel ready to start the day. You head over to the washroom to brush your teeth. Do you leave the water running or turn off the tap?",
-        "option1": "images/tapWaterRunning.png",
-        "option2": "images/tapWaterNoRunning.png",
+        "option1": "https://image.flaticon.com/icons/svg/1683/1683052.svg",
+        "option2": "https://image.flaticon.com/icons/svg/286/286203.svg",
         "points1": "-10", "points2": "10", "nextquest": "2", "bg": "images/brushingTeeth.png"
     },
     {
         "id": "2", "title": "If you turned off the tap, you realize that even saving small amounts of water every day will add up. Now it's time to take a shower. You aim to take a short shower to save water, but what temperature should you choose? Hot or a little cooler than usual?",
-        "option1": "https://www.pinclipart.com/picdir/big/35-354331_bikram-bikram-audio-bikram-express-emotional-thermometer-autism.png",
-        "option2": "https://www.pinclipart.com/picdir/big/63-639931_buti-yoga-vinyasa-thermometer-clipart.png",
+        "option1": "https://image.flaticon.com/icons/svg/362/362410.svg",
+        "option2": "https://image.flaticon.com/icons/svg/362/362412.svg",
         "points1": "-10", "points2": "10", "nextquest": "3", "bg": "images/bathroom.jpg"
     },
     {
@@ -66,7 +66,7 @@ var data = [
     {
         "id": "11", "title": "If you only have a few dishes, handwashing saves electricity! <BR/>Finally you have some leisure time! How about watching TV? Or maybe go for a walk?",
         "option1": "images/watching_tv.png",
-        "option2": "images/park.jpg", "points1": "-10",
+        "option2": "images/park2.jpg", "points1": "-10",
         "points2": "10", "nextquest": "12", "bg": "images/kitchen.jpg"
     },
     {
