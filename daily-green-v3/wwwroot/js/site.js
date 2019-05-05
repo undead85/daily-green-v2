@@ -114,6 +114,7 @@ function init() {
 
     setQuestion(1);
     $("#playAgain").hide();
+    $("#titleScore").hide();
 }
 
 function setQuestion(questId) {
@@ -125,6 +126,9 @@ function setQuestion(questId) {
     $("#option2").data("points", questData.points2).data("nextquest", parseInt(questData.nextquest));
     $("#option1").attr("src", questData.option1);
     $("#option2").attr("src", questData.option2);
+
+    //var bgImage = 'background-image:url(' + questData.bg + '); ';
+    //$("#gameSection").attr("style", bgImage);
 }
 
 function processOption(obj) {
@@ -146,5 +150,7 @@ function processOption(obj) {
 function endGame() {
     $("#option1").hide();
     $("#option2").hide();
+    $("#question").hide();
     $("#playAgain").show();
+    $("#titleScore").show();
 }

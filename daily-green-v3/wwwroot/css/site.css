@@ -39,3 +39,17 @@ body {
 p#option1 {
     border: 1px solid #ccc
 }
+
+.bg-opacity {
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+}
+
+    .bg-opacity > * {
+        opacity: 1;
+    }
+
+#question {
+    opacity: 1;
+}
