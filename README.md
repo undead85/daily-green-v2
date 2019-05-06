@@ -8,3 +8,7 @@ We used a HTML, CSS and Javascript.
 One of the most difficult parts to implement was making the user interface look good. We didn't have a UI/UX designer on our team so we had to improvise.
 
 The next steps of this project require us to keep developing additional features. We'd like to connect the game with links and some API data to learn more about what you can do to combat climate change. We also plan to improve the UI/UX by adding more choices, animations and making the websie easier to navigate.
+
+## How to use
+
+Download the code and double-click to index.html file.
